@@ -47,7 +47,7 @@
                         <tr>
                             <th scope="row"><?php echo $count; ?></td>
                             <td><img class="materialboxed" src="<?php echo $row['user_img']; ?>" alt="<?php echo $row['user_name']; ?>" height="100px"></td>
-                            <td><?php echo $row['user_name']; ?></td>
+                            <td><a href="./user/?user_id=<?php echo $row['id']; ?>" class="btn"><?php echo $row['user_name']; ?></a></td>
                             <td><?php echo $row['user_email']; ?></td>
                             <td><?php echo $row['user_pass']; ?></td>
                             <td><?php echo $row['user_age']; ?></td>
