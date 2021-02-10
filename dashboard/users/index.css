@@ -1,0 +1,11 @@
+main {
+    padding: 0 1rem;
+}
+
+img {
+    margin: 0 auto;
+}
+
+.table-parent {
+    overflow-x: auto;
+}
