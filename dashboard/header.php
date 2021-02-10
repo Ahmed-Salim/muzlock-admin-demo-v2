@@ -57,6 +57,19 @@ if (isset($_SESSION['admin_id']) && !empty($_SESSION['admin_id'])) {
     </header>
 
     <ul id="slide-out" class="sidenav sidenav-fixed">
+        <!-- <li>
+            <a href="<?php //echo urlPrefix(); 
+                        ?>">
+            <span class="material-icons">
+                person
+            </span>
+            <img class="responsive-img" src="https://upload.wikimedia.org/wikipedia/commons/5/55/User-admin-gear.svg">
+            Admin
+            </a>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li> -->
         <li><a href="<?php echo urlPrefix(); ?>">Dashboard</a></li>
         <li><a href="<?php echo urlPrefix() . 'users'; ?>">Users</a></li>
     </ul>
