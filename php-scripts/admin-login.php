@@ -25,6 +25,7 @@ if (isset($_SESSION['admin_id']) && !empty($_SESSION['admin_id'])) {
             while ($row = mysqli_fetch_assoc($result)) {
                 if (password_verify($admin_password, $row['admin_password'])) {
                     $_SESSION['admin_id'] = $row['admin_id'];
+                    $_SESSION['admin_username'] = $row['admin_username'];
 
                     header("Location: ../dashboard");
                     die();
