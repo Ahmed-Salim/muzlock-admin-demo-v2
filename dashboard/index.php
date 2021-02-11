@@ -1,6 +1,16 @@
 <?php include_once './header.php'; ?>
 
 <main>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="container">
+                <div class="col s12">
+                    <a href="./" class="breadcrumb">Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <h1 class="center-align">Welcome <?php echo $_SESSION['admin_username']; ?></h1>
 

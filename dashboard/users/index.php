@@ -3,6 +3,17 @@
 <link rel="stylesheet" href="./index.css">
 
 <main>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="container">
+                <div class="col s12">
+                    <a href="../" class="breadcrumb">Dashboard</a>
+                    <a href="./" class="breadcrumb">Muzlock Users</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <h1 class="center-align">Muzlock Users</h1>
 
     <section class="table-parent section">

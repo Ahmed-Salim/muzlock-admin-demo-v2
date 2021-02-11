@@ -1,11 +1,9 @@
-main {
-    padding: 0 1rem;
-}
-
 img {
     margin: 0 auto;
 }
 
 .table-parent {
+    padding-left: 1rem;
+    padding-right: 1rem;
     overflow-x: auto;
 }
