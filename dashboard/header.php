@@ -64,5 +64,17 @@ if (isset($_SESSION['admin_id']) && !empty($_SESSION['admin_id'])) {
             <div class="divider"></div>
         </li>
         <li><a href="<?php echo urlPrefix(); ?>">Dashboard</a></li>
-        <li><a href="<?php echo urlPrefix() . 'users'; ?>">Users</a></li>
+        <li>
+            <ul class="collapsible collapsible-accordion">
+                <li>
+                    <a class="collapsible-header">Muzlock Users<i class="material-icons">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="<?php echo urlPrefix() . 'users/add'; ?>">Add User</a></li>
+                            <li><a href="<?php echo urlPrefix() . 'users'; ?>">View All Users</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
     </ul>

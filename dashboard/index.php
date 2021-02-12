@@ -40,6 +40,7 @@
                         </span>
                     </div>
                     <div class="card-action">
+                        <a href="./users/add">Add User</a>
                         <a href="./users">View All Users</a>
                     </div>
                 </div>
