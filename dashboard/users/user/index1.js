@@ -7,7 +7,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var tooltips = document.querySelectorAll('.tooltipped');
     var tooltipInstances = M.Tooltip.init(tooltips);
-
-    var datepickers = document.querySelectorAll('.datepicker');
-    var datepickerInstances = M.Datepicker.init(datepickers);
 });
