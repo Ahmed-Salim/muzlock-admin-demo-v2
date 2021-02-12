@@ -16,27 +16,15 @@
 
     <h1 class="center-align">Muzlock Users</h1>
 
-    <section class="table-parent section">
-        <table class="highlight">
+    <section class="table-parent section container">
+        <table class="highlight centered">
             <thead>
                 <tr>
                     <th>#</th>
                     <th>Image</th>
                     <th>Name</th>
                     <th>Email</th>
-                    <th>Password</th>
-                    <th>Age</th>
-                    <th>Country</th>
-                    <th>Sect</th>
-                    <th>Revert</th>
-                    <th>Religion</th>
-                    <th>Phone</th>
-                    <th>Gender</th>
-                    <th>Date of Birth</th>
-                    <th>Language</th>
-                    <th>Origin</th>
-                    <th>Smoke</th>
-                    <th>Job Title</th>
+                    <th>Details</th>
                 </tr>
             </thead>
             <tbody>
@@ -58,21 +46,9 @@
                         <tr>
                             <th scope="row"><?php echo $count; ?></td>
                             <td><img class="materialboxed" src="<?php echo $row['user_img']; ?>" alt="<?php echo $row['user_name']; ?>" height="100px"></td>
-                            <td><a href="./user/?user_id=<?php echo $row['id']; ?>" class="btn"><?php echo $row['user_name']; ?></a></td>
+                            <td><?php echo $row['user_name']; ?></td>
                             <td><?php echo $row['user_email']; ?></td>
-                            <td><?php echo $row['user_pass']; ?></td>
-                            <td><?php echo $row['user_age']; ?></td>
-                            <td><?php echo $row['user_country']; ?></td>
-                            <td><?php echo $row['user_sect']; ?></td>
-                            <td><?php echo $row['user_revert']; ?></td>
-                            <td><?php echo $row['user_religion']; ?></td>
-                            <td><?php echo $row['user_phone']; ?></td>
-                            <td><?php echo $row['user_gender']; ?></td>
-                            <td><?php echo $row['user_dob']; ?></td>
-                            <td><?php echo $row['user_lang']; ?></td>
-                            <td><?php echo $row['user_origin']; ?></td>
-                            <td><?php echo $row['user_smoke']; ?></td>
-                            <td><?php echo $row['user_jobTitle']; ?></td>
+                            <td><a href="./user/?user_id=<?php echo $row['id']; ?>" class="btn btn-large"><i class="material-icons right">pageview</i>View</a></td>
                         </tr>
 
                 <?php
