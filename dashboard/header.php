@@ -57,21 +57,21 @@ if (isset($_SESSION['admin_id']) && !empty($_SESSION['admin_id'])) {
     </header>
 
     <ul id="slide-out" class="sidenav sidenav-fixed">
-        <li>
-            <img class="responsive-img" src="<?php echo urlPrefix() . '../images/user-1633249_1280.png'; ?>" alt="Admin Avatar">
+        <li class="valign-wrapper">
+            <img class="responsive-img" width="100px" src="<?php echo urlPrefix() . '../images/user-1633249_1280.png'; ?>" alt="Admin Avatar">
         </li>
         <li>
             <div class="divider"></div>
         </li>
-        <li><a href="<?php echo urlPrefix(); ?>">Dashboard</a></li>
+        <li class="<?php echo (basename(getcwd()) === 'dashboard') ? ('active') : (''); ?>"><a href="<?php echo urlPrefix(); ?>">Dashboard</a></li>
         <li>
             <ul class="collapsible collapsible-accordion">
-                <li>
+                <li class="<?php echo (strpos(getcwd(), 'users')) ? ('active') : (''); ?>">
                     <a class="collapsible-header">Muzlock Users<i class="material-icons">arrow_drop_down</i></a>
                     <div class="collapsible-body">
                         <ul>
-                            <li><a href="<?php echo urlPrefix() . 'users/add'; ?>">Add User</a></li>
-                            <li><a href="<?php echo urlPrefix() . 'users'; ?>">View All Users</a></li>
+                            <li class="<?php echo (basename(getcwd()) === 'add') ? ('active') : (''); ?>"><a href="<?php echo urlPrefix() . 'users/add'; ?>">Add User</a></li>
+                            <li class="<?php echo (basename(getcwd()) === 'users' || basename(getcwd()) === 'user') ? ('active') : (''); ?>"><a href="<?php echo urlPrefix() . 'users'; ?>">View All Users</a></li>
                         </ul>
                     </div>
                 </li>
