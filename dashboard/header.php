@@ -71,7 +71,7 @@ if (isset($_SESSION['admin_id']) && !empty($_SESSION['admin_id'])) {
                     <div class="collapsible-body">
                         <ul>
                             <li class="<?php echo (basename(getcwd()) === 'add') ? ('active') : (''); ?>"><a href="<?php echo urlPrefix() . 'users/add'; ?>">Add User</a></li>
-                            <li class="<?php echo (basename(getcwd()) === 'users' || basename(getcwd()) === 'user') ? ('active') : (''); ?>"><a href="<?php echo urlPrefix() . 'users'; ?>">View All Users</a></li>
+                            <li class="<?php echo (basename(getcwd()) === 'users' || basename(getcwd()) === 'user') ? ('active') : (''); ?>"><a href="<?php echo urlPrefix() . 'users'; ?>">View Users</a></li>
                         </ul>
                     </div>
                 </li>

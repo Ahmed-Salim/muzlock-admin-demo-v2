@@ -41,7 +41,7 @@
                     </div>
                     <div class="card-action">
                         <a href="./users/add">Add User</a>
-                        <a href="./users">View All Users</a>
+                        <a href="./users">View Users</a>
                     </div>
                 </div>
             </div>
