@@ -131,10 +131,18 @@ if (isset($_GET['user_id']) && !empty($_GET['user_id'])) {
                                         <input id="user_jobTitle" name="user_jobTitle" type="text" class="validate" value="<?php echo $row['user_jobTitle']; ?>">
                                         <label for="user_jobTitle">User Job Title</label>
                                     </div>
-                                    <div class="col s12 center-align">
+                                </div>
+                                <div class="row">
+                                    <div class="col s6 center-align">
                                         <button class="btn btn-large" type="submit" name="update-profile">
                                             Update
                                             <i class="material-icons right">update</i>
+                                        </button>
+                                    </div>
+                                    <div class="col s6 center-align">
+                                        <button class="btn btn-large red" type="button" name="delete-user">
+                                            Delete
+                                            <i class="material-icons right">delete</i>
                                         </button>
                                     </div>
                                 </div>
