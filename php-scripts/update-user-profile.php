@@ -87,7 +87,7 @@ if (isset($_SESSION['admin_id']) && !empty($_SESSION['admin_id'])) {
 } else {
     echo 'Please Login Again to Continue!';
 
-    header("Refresh:3; url=./logout.php");
+    header("Refresh:3; url=./admin-logout.php");
     die();
 }
 
